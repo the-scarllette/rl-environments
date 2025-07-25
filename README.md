@@ -12,6 +12,12 @@ Inspired by an environment created by [Mohamed and Jimenez Rezende (2015)](https
 
 <img src="lavaflow/images/lavaflowenvironmentexample.png" alt="Lavaflow Environment Example" width="100"/>
 
+**Simple Crafter**
+
+A more simple and refined version of the [Crafter environment](https://danijar.com/project/crafter/) (Hafner 2021).
+
+<img src="simplecrafter/images/simplecrafter-example.png" alt="SimpleCrafter Environment Example" width="100"/>
+
 **Taxicab**
 
 <img src="taxicab/images/taxicab.png" alt="Taxicab Environment Example" width="100"/>

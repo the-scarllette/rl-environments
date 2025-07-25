@@ -1,4 +1,4 @@
-# Lavaflow Environment Specification
+# Lavaflow Environment
 
 A 2D gridworld environment consisting of an $n \times n$ maze.
 Lava spreads to adjacent squares each timestep. The agent needs to place blocks in order to protect the

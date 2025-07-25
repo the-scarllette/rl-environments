@@ -1,4 +1,4 @@
-# SimpleCrafter Environment Specification
+# SimpleCrafter Environment
 
 A 2D gridworld environment.
 The environment consists of a range of resources that the agent needs to collect and use
