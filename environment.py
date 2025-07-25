@@ -120,14 +120,6 @@ class Environment:
     ) -> List[int]:
         return self.possible_actions
 
-    def get_transition_probability(
-            self,
-            state: np.ndarray,
-            action: int,
-            next_state: np.ndarray
-    ) -> float:
-        return 1.0
-
     def get_start_states(self) -> List[np.ndarray]:
         return []
 
@@ -137,6 +129,14 @@ class Environment:
             probability_weights: bool=False
     ) -> Tuple[List[np.ndarray], List[float]]:
         return [], []
+
+    def get_transition_probability(
+            self,
+            state: np.ndarray,
+            action: int,
+            next_state: np.ndarray
+    ) -> float:
+        return 1.0
 
     def is_terminal(
             self,
