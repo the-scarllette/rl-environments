@@ -10,6 +10,11 @@ and some are entirely unique.
 
 <img src="taxicab/images/taxicab.png" alt="Taxicab Environment Example" width="100"/>
 
+**Tinytown**
+
+Based on the board game [Tiny Towns](https://www.petermcpherson.com/games/tiny-towns) by Peter McPherson.
+
+<img src="tinytown/images/tinytown.png" alt="Tinytown Environment Example" width="100"/>
 
 ## Usage
 
