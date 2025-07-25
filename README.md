@@ -4,6 +4,8 @@ A collection of simple reinforcement learning environments.
 Some are modifications of other environments, others are based on tabletop games,
 and some are entirely unique.
 
+## Environments Implemented
+
 ## Usage
 
 The environments follow (roughly) the same structure as [OpenAI Gym](https://github.com/openai/gym).
