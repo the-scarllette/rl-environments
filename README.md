@@ -11,7 +11,8 @@ Each environment has a 1 `step` and `reset` method:
 
 ```python
 def step(action) -> (np.ndarray, float, bool, Any)
-
+```
+```python
 def reset() -> (np.ndarray, any)
 ```
 
