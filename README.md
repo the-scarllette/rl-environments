@@ -6,6 +6,12 @@ and some are entirely unique.
 
 ## Environments Implemented
 
+**Lavaflow**
+
+Inspired by an environment created by [Mohamed and Jimenez Rezende (2015)](https://arxiv.org/abs/1509.08731).
+
+<img src="lavaflow/images/lavaflowenvironmentexample.png" alt="Lavaflow Environment Example" width="100"/>
+
 **Taxicab**
 
 <img src="taxicab/images/taxicab.png" alt="Taxicab Environment Example" width="100"/>
