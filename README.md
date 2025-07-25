@@ -6,6 +6,11 @@ and some are entirely unique.
 
 ## Environments Implemented
 
+**Taxicab**
+
+<img src="taxicab/images/taxicab.png" alt="Taxicab Environment Example" width="100"/>
+
+
 ## Usage
 
 The environments follow (roughly) the same structure as [OpenAI Gym](https://github.com/openai/gym).
