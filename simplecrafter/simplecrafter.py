@@ -2,7 +2,7 @@ import numpy as np
 import random
 from typing import List, Tuple
 
-from environment import Environment
+from environments.environment import Environment
 
 
 ## Goal
@@ -64,8 +64,8 @@ class SimpleCrafter(Environment):
 
     default_start_state = np.array(
         [
-            [WOOD, WOOD, WOOD, STONE],
-            [WOOD, EMPTY, STONE, DIAMOND],
+            [WOOD, WOOD, WOOD, EMPTY],
+            [WOOD, EMPTY, EMPTY, DIAMOND],
             [EMPTY, EMPTY, STONE, IRON],
             [ WOOD, EMPTY, EMPTY, STONE]
         ]
@@ -117,7 +117,7 @@ class SimpleCrafter(Environment):
         }
 
         self.state_shape = (self.grid_size + 7,)
-        self.state_dtype = int
+        self.state_dtype = float
 
         self.terminal = True
         pass
@@ -273,13 +273,8 @@ class SimpleCrafter(Environment):
 
     def is_terminal(
             self,
-            state: None|np.ndarray=None
+            state: np.ndarray
     ) -> bool:
-        if None:
-            state = self.current_state
-            if self.current_state is None:
-                return True
-
         if state[self.block_index_lookup[SimpleCrafter.DIAMOND]]  >= 1:
             return True
 
@@ -358,7 +353,7 @@ class SimpleCrafter(Environment):
 
         self.current_state = start_state
         if self.current_state is not None:
-            return self.current_state
+            return self.current_state.copy()
 
         unflattened_start_state = self.start_state.copy()
         agent_placed = False
@@ -371,7 +366,7 @@ class SimpleCrafter(Environment):
 
         self.current_state = np.zeros(self.state_shape, dtype=self.state_dtype)
         self.current_state[:self.grid_size] = np.reshape(unflattened_start_state, (self.grid_size,))
-        return self.current_state
+        return self.current_state.copy()
 
     def step(
             self,
@@ -523,7 +518,7 @@ class SimpleCrafter(Environment):
             if self.terminal:
                 reward += self.failure_reward
 
-        return self.current_state, reward, self.terminal, None
+        return self.current_state.copy(), reward, self.terminal, None
 
     def unflatten_state(
             self,
